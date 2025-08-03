@@ -6,7 +6,7 @@ export const ENDPOINT={
     logout:"/auth/logout",
     createPost: "/posts",
     getAllPosts: "/posts",
-    getUserPosts: (userId) => `/posts/${userId}`
+     getUserPosts: (userId) => `/posts/user/${userId}`,
 
 
 }
