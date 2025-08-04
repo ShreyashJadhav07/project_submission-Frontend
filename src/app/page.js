@@ -1,68 +1,3 @@
-// import CreatePostForm from "@/components/createPostForm";
-// import PostFeed from "@/components/PostFeed";
-
-// export default function Home() {
-//   return (
-//     <main className="min-h-screen bg-gray-50">
-//      <div className="py-6 space-y-6 min-h-screen">
-//   <div className="border border-red-500 bg-yellow-200 p-8">
-//     <CreatePostForm />
-//   </div>
-//   <div className="border border-green-500 bg-green-200 p-8">
-//     <PostFeed />
-//   </div>
-// </div>
-//     </main>
-//   );
-// }
-
-// import CreatePostForm from "@/components/createPostForm";
-// import PostFeed from "@/components/PostFeed";
-
-// export default function Home() {
-//   return (
-//     <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
-//       <div className="container mx-auto px-4 py-20">
-//         {/* Header */}
-//         <div className="text-center mb-8">
-//           <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
-//             Social Feed
-//           </h1>
-//           <p className="text-gray-600 dark:text-gray-300">
-//             Share your thoughts and connect with others
-//           </p>
-//         </div>
-
-//         {/* Main Content Grid */}
-//         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-//           {/* Left Side - Posts Feed */}
-//           <div className="lg:col-span-2 order-2 lg:order-1">
-//             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-6">
-//               <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-//                 Recent Posts
-//               </h2>
-//               <div className="max-h-[calc(100vh-12rem)] overflow-y-auto pr-2">
-//                 <PostFeed />
-//               </div>
-//             </div>
-//           </div>
-
-//           {/* Right Side - Create Post Form */}
-//           <div className="lg:col-span-1 order-1 lg:order-2 h-fit">
-//             <div className="sticky top-8">
-//               <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-6">
-//                 <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-//                   Create Post
-//                 </h2>
-//                 <CreatePostForm />
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </main>
-//   );
-// }
 
 "use client";
 
@@ -95,7 +30,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-4 py-20">
-        {/* Header */}
+       
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
             Social Feed
@@ -105,9 +40,9 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Main Content Grid */}
+        
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {/* Posts Feed */}
+       
           <div className="lg:col-span-2 order-2 lg:order-1">
             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-6">
               <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">

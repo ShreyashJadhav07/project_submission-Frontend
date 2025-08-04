@@ -1,38 +1,4 @@
-// "use client";
 
-// import { useEffect, useState } from "react";
-// import { useSelector } from "react-redux";
-// import { getUserPosts } from "@/lib/post";
-// import { Card, CardContent } from "@/components/ui/card";
-// import { toast } from "sonner";
-
-// export default function MyPostsPage() {
-//   const [posts, setPosts] = useState([]);
-
-  
-//   const user = useSelector((state) => state.user.user);
-
-//   useEffect(() => {
-//     if (!user?._id) return;
-
-//     getUserPosts(user._id)
-//       .then((res) => setPosts(res.posts || []))
-//       .catch(() => toast.error("Failed to fetch your posts"));
-//   }, [user]);
-
-//   return (
-//     <div className="max-w-xl mx-auto py-6 space-y-4 ">
-//       <h1 className="text-xl font-semibold ">My Posts</h1>
-//       {posts.map((post) => (
-//         <Card key={post._id}>
-//           <CardContent className="p-4">
-//             <p className="text-sm text-black">{post.content}</p>
-//           </CardContent>
-//         </Card>
-//       ))}
-//     </div>
-//   );
-// }
 "use client";
 
 import { useEffect, useState } from "react";
@@ -110,7 +76,7 @@ export default function MyPostsPage() {
         <div className="text-center py-20">
           <p className="text-gray-500 mb-4">You haven't posted anything yet.</p>
           <Link href={"/"}>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 cursor-pointer">
               Create Your First Post
             </button>
           </Link>
