@@ -1,10 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { createPost } from "@/lib/post";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
+
+
 import { toast } from "sonner";
+import { Textarea } from "./ui/textarea";
+import { Button } from "./ui/button";
+import { createPost } from "@/lib/post";
 
 export default function CreatePostForm({ onPostCreated }) {
   const [content, setContent] = useState("");
@@ -32,7 +34,7 @@ export default function CreatePostForm({ onPostCreated }) {
   };
 
   return (
-    <div className="bg-white dark:bg-zinc-900 p-4 rounded-2xl shadow-md space-y-3 max-w-xl w-full mx-auto">
+    <div className="bg-yellow-200 dark:bg-zinc-900 p-4 rounded-2xl shadow-md space-y-3 max-w-xl w-full mx-auto">
       <Textarea
         placeholder="What's on your mind?"
         value={content}

@@ -2,10 +2,13 @@
 
 import { useEffect, useState } from "react";
 import { getAllPosts } from "@/lib/post";
-import { Card, CardContent } from "@/components/ui/card";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Skeleton } from "@/components/ui/skeleton";
+
+
+
 import { toast } from "sonner";
+import { Skeleton } from "./ui/skeleton";
+import { Avatar, AvatarFallback } from "./ui/avatar";
+import { Card, CardContent } from "./ui/card";
 
 
 export default function PostFeed() {

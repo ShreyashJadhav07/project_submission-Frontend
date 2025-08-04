@@ -1,18 +1,20 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
-
+import { useSelector } from "react-redux";
+import { getUserPosts } from "@/lib/post";
 import { Card, CardContent } from "@/components/ui/card";
 import { toast } from "sonner";
-import { getUserPosts } from "@/lib/post";
 
 export default function MyPostsPage() {
-
   const [posts, setPosts] = useState([]);
+
+  
+  const user = useSelector((state) => state.user.user);
 
   useEffect(() => {
     if (!user?._id) return;
+
     getUserPosts(user._id)
       .then((res) => setPosts(res.posts || []))
       .catch(() => toast.error("Failed to fetch your posts"));
